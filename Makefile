@@ -7,6 +7,8 @@
 ###############################################################################
 VENV3_DIR = venv3
 VENV2_DIR = venv2
+PYSRC = $(wildcard src/*.py)
+PYOBJ = $(PYSRC .py:.pyc)
 
 ###############################################################################
 # Rules
@@ -24,6 +26,14 @@ help:
 .PHONY: clean
 clean:
 	rm -rfv .venv2 .venv3
+
+# Compile All codes
+.PHONY: compile
+compile: ${PYOBJ}
+
+# Implicity rule for python code check
+src/%.pyc: src/%.py
+	python -m py_compile $<
 
 # Virtual Enviroment -----------------------------------------------------------
 
