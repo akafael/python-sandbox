@@ -1,5 +1,6 @@
 ##
 # Makefile for Python Projects
+# @author Akafael
 ##
 
 ###############################################################################
@@ -17,9 +18,9 @@ PYOBJ = $(PYSRC .py:.pyc)
 # Print help for all commands
 .PHONY: help
 help:
-	@echo "Use: make -f openbuild.mk [OPTION]"
+	@echo "Use: make -f Makefile [OPTION]"
 	@echo "\nOPTIONS"
-	@sed openbuild.mk -n -e "N;s/^# \(.*\)\n.PHONY:\(.*\)/ \2:\1/p;D" | column -ts:
+	@sed Makefile -n -e "N;s/^# \(.*\)\n.PHONY:\(.*\)/ \2:\1/p;D" | column -ts:
 	@echo ""
 
 # Remove Generated files

@@ -1,9 +1,9 @@
-'''
+"""
 Bubble Sort Algorithm implentation
  @complexity O(n^2)
  @author Akafael
  @ref https://en.wikipedia.org/wiki/Bubble_sort
-'''
+"""
 #!/usr/bin/env python
 
 def bubbleSort(arr): 
