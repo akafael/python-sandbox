@@ -1,0 +1,9 @@
+# Exclude Files
+
+# Python Things
+*.pyc
+__pycache__
+
+# Local Envioroment Files
+tmp/*
+tools/*

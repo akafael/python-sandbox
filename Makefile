@@ -48,14 +48,6 @@ help:
 .PHONY: compile
 compile: ${PYOBJ}
 
-##
-# Implicity rule for python code check
-# - Using Installed Python
-##
-src/%.pyc: src/%.py
-	. ${LOCALVIRTUALENV_DIR}/bin/activate &&\
-	python -m py_compile $<
-
 # Download Tools and Create Local Enviroment
 .PHONY: env
 env: install-python install-virtualenv create-virtualenv install-pythonlibs
@@ -124,5 +116,13 @@ ${LOCALVIRTUALENV_DIR}: ${LOCALPYTHON_DIR} ${INSTALLVIRTUALENV_DIR}
 	mkdir -p ${LOCALVIRTUALENV_DIR}/.. &&\
 	cd ${LOCALVIRTUALENV_DIR}/.. &&\
 	${LOCALPYTHON_DIR}/bin/virtualenv py${PYVERSION} --python=${LOCALPYTHON_DIR}/bin/python3
+
+##
+# Pattern rule for python code check
+# - Using Installed Python
+##
+src/%.pyc: src/%.py
+	. ${LOCALVIRTUALENV_DIR}/bin/activate &&\
+	python -m py_compile $<
 
 
