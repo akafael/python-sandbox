@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/akafael/python-sandbox.svg?branch=master)](https://travis-ci.org/akafael/python-sandbox)
+[![Build Status](https://travis-ci.com/akafael/python-sandbox.svg?branch=master)](https://travis-ci.com/akafael/python-sandbox)
 
 # Python
 
 Guiding myself through the hidden path of Python. Combination of tutorial codes and tools for Python. 
 
-You can also check the [complete list with several programming languages](https://github.com/akafael?tab=repositories&q=sandbox)
+You can also check the [complete list with kudos for several different programming languages](https://github.com/akafael?tab=repositories&q=sandbox)
 
 ## Reference
 
