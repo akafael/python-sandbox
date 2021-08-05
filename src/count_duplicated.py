@@ -12,6 +12,21 @@ import re
 import sys
 
 
+def countDuplicateOneLine(numbers):
+    """
+    Count Duplicated Number in a list using buildin python functions
+    :type numbers: interger_array
+    :return: interger
+
+    Examples:
+    >> countDuplicated([1,2,1,2,3,4,4])
+    3
+    >> countDuplicated([1,2,3,4])
+    0
+    """
+    return len([n in set(numbers) if numbers.count(n)])
+
+
 def countDuplicate(numbers):
     """
     Count Duplicated Number in a list
