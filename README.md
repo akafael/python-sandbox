@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/akafael/python-sandbox.svg?branch=master)](https://travis-ci.com/akafael/python-sandbox)
-
 # Python
 
 Guiding myself through the hidden path of Python. Combination of tutorial codes and tools for Python. 
